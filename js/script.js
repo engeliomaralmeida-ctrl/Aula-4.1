@@ -1,5 +1,5 @@
-// Função para calcular o menor valor entre dois números
-function calcularMenorValor() {
+// Função para calcular o maior valor entre dois números
+function calcularMaiorValor() {
     // 1. OBTER OS VALORES DOS CAMPOS DE ENTRADA
     let valor1String = document.getElementById('valor1').value;
     let valor2String = document.getElementById('valor2').value;
@@ -14,9 +14,9 @@ function calcularMenorValor() {
         return;
     }
 
-    // 4. CALCULAR O MENOR VALOR ENTRE OS DOIS
-    let menorValor = Math.min(valor1, valor2);
+    // 4. CALCULAR O MAIOR VALOR ENTRE OS DOIS
+    let maiorValor = Math.max(valor1, valor2);
 
     // 5. EXIBIR O RESULTADO NA PÁGINA
-    document.getElementById('resultado').innerHTML = "O menor valor é: " + menorValor;
+    document.getElementById('resultado').innerHTML = "O maior valor é: " + maiorValor;
 }
