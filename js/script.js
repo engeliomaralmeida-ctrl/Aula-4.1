@@ -20,3 +20,10 @@ function calcularMaiorValor() {
     // 5. EXIBIR O RESULTADO NA PÁGINA
     document.getElementById('resultado').innerHTML = "O maior valor é: " + maiorValor;
 }
+
+// ================================
+// Alternância de tema claro/escuro
+// ================================
+document.getElementById('toggle-theme').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
